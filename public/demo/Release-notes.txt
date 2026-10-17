@@ -1,0 +1,5 @@
+Degoo Index 0.1.0
+
+Added folder browsing, scoped recursive search, previews, recursive bulk manifests, and bounded metadata caching.
+
+Live Degoo API compatibility is unverified in this delivery. Sample mode is fully local.

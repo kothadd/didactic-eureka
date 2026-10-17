@@ -1,0 +1,33 @@
+{
+  "name": "degoo-public-index",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.10.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "dev:demo": "node scripts/demo.mjs dev",
+    "start:demo": "node scripts/demo.mjs start",
+    "build": "next build --webpack",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "node --conditions=react-server --import tsx --test tests/*.test.ts",
+    "verify:degoo": "node --env-file-if-exists=.env.local --import tsx scripts/verify-degoo.ts"
+  },
+  "dependencies": {
+    "next": "16.4.2",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "lucide-react": "1.59.0",
+    "zod": "4.6.7",
+    "server-only": "0.0.1"
+  },
+  "devDependencies": {
+    "typescript": "7.0.2",
+    "tsx": "4.23.15",
+    "@types/node": "26.6.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0"
+  }
+}
